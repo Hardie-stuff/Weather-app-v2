@@ -65,7 +65,7 @@ li {
     position: relative;
     font-size: 16px;
     top: -140px;
-    left: 280px;
+    left: 270px;
   }
   
   .units a {
@@ -93,34 +93,18 @@ li {
     cursor: default;
   }
 
-  .weather-forecast {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .weather-forecast-date {
-    font-size: 16px;
-    color: #504f4f;
-    opacity: 70%;
-  }
-  
-  .weather-forecast-temperature {
-    font-size: 13px;
-    color: #f75282;
-  }
-  
-  .weather-forecast-temp-min {
-    opacity: 70%;
-  }
+ 
 
   .link-git {
     color: #474746;
     text-decoration: none;
     position: 0 auto;
     opacity: 70%;
+    margin: 0 auto;
   }
 
   #bottom-link {
-    position: 0 auto;
+      margin: 0 auto;
+    
   }
   
