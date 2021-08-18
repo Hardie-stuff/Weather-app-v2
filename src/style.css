@@ -43,5 +43,84 @@ ul {
 li {
       list-style: none;
       color: #5c8d89;
-      font-family: 'Quicksand', sans-serif;
- }
+      font-family: 'Quicksand', sans-serif;    
+}
+
+
+.current-temperature strong {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #504f4f;
+    opacity: 80%;
+    line-height: 1;
+    position: relative;
+    top: -100px;
+    left: 280px;
+  }
+  
+
+  
+  .units {
+    position: relative;
+    font-size: 16px;
+    top: -140px;
+    left: 280px;
+  }
+  
+  .units a {
+    color: #5c8d89;
+    font-weight: normal;
+  }
+  
+  .units .active {
+    color: #504f4f;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+
+
+#icon {
+    position: relative;
+    top: -110px;
+    left: 280px;
+  }
+
+  #farenheit-link, #celsius-link {
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .weather-forecast-date {
+    font-size: 16px;
+    color: #504f4f;
+    opacity: 70%;
+  }
+  
+  .weather-forecast-temperature {
+    font-size: 13px;
+    color: #f75282;
+  }
+  
+  .weather-forecast-temp-min {
+    opacity: 70%;
+  }
+
+  .link-git {
+    color: #474746;
+    text-decoration: none;
+    position: 0 auto;
+    opacity: 70%;
+  }
+
+  #bottom-link {
+    position: 0 auto;
+  }
+  
