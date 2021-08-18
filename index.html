@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="src/style.css">
     <title>Weather App</title>
 </head>
@@ -12,20 +17,59 @@
     <div class="container">
         <div class="weather-app-wrapper">
             <div class="weather-app">
+
                 <form action="search" id="search-form">
-                    <input
-                    type="search"
-                    placeholder="Enter City"
-                    class="form-control"
-                    id="search-input"
-                    autocomplete="off"
-                  />
-                  <input type="submit" value="Search" />  
-                  <button id="currentLocation">Current</button>
-                </form>
+                    <div class="input-group mb-3">
+                        <input
+                            type="search"
+                            placeholder="Enter a city"
+                            class="form-control"
+                            id="city-input"
+                            autocomplete="off"
+                        />
+                        <input 
+                            class="btn btn-outline-secondary"
+                            type="submit" 
+                            value="Search"
+                            id="search-button" 
+                        />  
+                        <button 
+                            class="btn btn-outline-secondary"
+                            id="currentLocation">
+                            Current
+                        </button>
+                    </div>
+                 </form>
+        
+
+                <h1 class="city">
+                    Cape Town
+                </h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <ul>
+                                <li>
+                                    <span id="date">Wednesday</span>
+                                    <span id="current-time">11:50</span>
+                                    <div id="weather-description">Overcast</div>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+
+                <div class="col-8" style="height: 10px">
+                    <div class="weather-temperature">
+                      <img src="" alt="overcast" id="icon" />
+                      <span class="current-temperature">
+                        <strong id="temperature"></strong>
+                      </span>
+                      <span class="units">
+                        <a href="#" id="celsius-link" class="active">°C </a>|
+                        <a href="#" id="farenheit-link">°F</a></span>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
    <script src="src/app.js"></script>
 </body>

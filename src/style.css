@@ -1,12 +1,47 @@
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
 .weather-app {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #dadde1;
+    border: 3px solid #e0f8df;
     border-radius: 10px;
 }
 
 #search-form {
     text-align: center;
-    padding: 40px 20px 80px;
-  }
+    padding: 20px;
+}
+
+#city-input {
+    background-color: #d3f6d1;
+    opacity: 50%;
+    border: none;
+}
+
+#search-button, #currentLocation {
+    background-color :#5c8d89;
+    color: #fff;
+}
+
+
+
+h1 {
+      font-size: 40px;
+      color: #74b49b;
+      font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+      margin: 0 auto;
+      padding: 0 auto;
+}
+
+li {
+      list-style: none;
+      color: #5c8d89;
+      font-family: 'Quicksand', sans-serif;
+ }
