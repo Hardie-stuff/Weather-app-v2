@@ -43,27 +43,34 @@ ul {
 li {
       list-style: none;
       color: #5c8d89;
-      font-family: 'Quicksand', sans-serif;    
+      font-family: 'Quicksand', sans-serif; 
+      text-transform: capitalize;   
+}
+
+#airQuality {
+    position: relative;
+    font-size: 13px;
+    top: 20px;
 }
 
 
 .current-temperature strong {
     font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 400;
     color: #504f4f;
     opacity: 80%;
     line-height: 1;
     position: relative;
     top: -100px;
-    left: 280px;
+    left: 270px;
   }
   
 
   
   .units {
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     top: -140px;
     left: 270px;
   }
@@ -85,7 +92,7 @@ li {
 #icon {
     position: relative;
     top: -110px;
-    left: 280px;
+    left: 260px;
   }
 
   #farenheit-link, #celsius-link {
