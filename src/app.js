@@ -41,11 +41,13 @@ function displayTemperature(response) {
     let descriptionElement = document.querySelector("#weather-description");
     let humidityElement = document.querySelector("#humidity");
     let windELement = document.querySelector("#wind");
+    let dateElement = document.querySelector("#date")
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
     windELement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "d158e814af56482efd1df2f3283070e5";

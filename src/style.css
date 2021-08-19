@@ -44,13 +44,17 @@ li {
       list-style: none;
       color: #5c8d89;
       font-family: 'Quicksand', sans-serif; 
-      text-transform: capitalize;   
+     
+}
+
+li:first-letter {
+    text-transform: capitalize;   
 }
 
 #airQuality {
     position: relative;
     font-size: 13px;
-    top: 20px;
+    top: 10px;
 }
 
 
