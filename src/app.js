@@ -35,7 +35,6 @@ function formatDay(timestamp) {
 
 
 function displayTemperature(response) {
-    console.log(response.data)
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#weather-description");
@@ -47,7 +46,7 @@ function displayTemperature(response) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
     windELement.innerHTML = Math.round(response.data.wind.speed);
-    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000)
 }
 
 let apiKey = "d158e814af56482efd1df2f3283070e5";
