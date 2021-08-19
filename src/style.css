@@ -33,6 +33,7 @@ h1 {
       font-size: 40px;
       color: #74b49b;
       font-family: 'Quicksand', sans-serif;
+      padding-left: 30px;
 }
 
 ul {
@@ -66,8 +67,8 @@ li:first-letter {
     opacity: 80%;
     line-height: 1;
     position: relative;
-    top: -100px;
-    left: 270px;
+    top: -120px;
+    left: 240px;
   }
   
 
@@ -75,8 +76,8 @@ li:first-letter {
   .units {
     position: relative;
     font-size: 18px;
-    top: -140px;
-    left: 270px;
+    top: -160px;
+    left: 240px;
   }
   
   .units a {
@@ -95,8 +96,8 @@ li:first-letter {
 
 #icon {
     position: relative;
-    top: -110px;
-    left: 260px;
+    top: -130px;
+    left: 230px;
   }
 
   #farenheit-link, #celsius-link {
