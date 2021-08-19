@@ -83,26 +83,23 @@ li:first-letter {
   .units a {
     color: #5c8d89;
     font-weight: normal;
+    cursor: default;
+    text-decoration: none;
   }
   
   .units .active {
     color: #504f4f;
-    cursor: pointer;
+    cursor: default;
     text-decoration: none;
     font-weight: bolder;
   }
 
-
+  
 
 #icon {
     position: relative;
     top: -130px;
     left: 230px;
-  }
-
-  #farenheit-link, #celsius-link {
-    text-decoration: none;
-    cursor: default;
   }
 
  
