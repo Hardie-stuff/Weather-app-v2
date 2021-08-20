@@ -61,6 +61,25 @@ function handleSubmit(event) {
   search(cityInputElement.value)
 }
 
+function currentLocation(position) {
+  let longitude = position.coords.longitude;
+  let latitude = position.coords.latitude;
+
+  let apiKey = "d158e814af56482efd1df2f3283070e5";
+  let unit = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function findLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(currentLocation);
+}
+
+let geolocationButton = document.querySelector("#currentLocation");
+geolocationButton.addEventListener("click", findLocation);
+
 function displayFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -91,4 +110,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link"); 
 celsiusLink.addEventListener("click", displayCelsius);
 
-search("New York");
+search("Bristol");
