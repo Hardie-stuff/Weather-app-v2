@@ -78,21 +78,11 @@ li:first-letter {
     font-size: 18px;
     top: -160px;
     left: 240px;
-  }
-  
-  .units a {
-    color: #5c8d89;
-    font-weight: normal;
-    cursor: default;
-    text-decoration: none;
-  }
-  
-  .units .active {
     color: #504f4f;
-    cursor: default;
-    text-decoration: none;
     font-weight: bolder;
   }
+  
+
 
   
 
